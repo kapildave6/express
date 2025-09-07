@@ -31,36 +31,36 @@
     "app",
     "api"
   ],
-   "dependencies": {
-    "accepts": "^1.3.5",             // vulnerable to ReDoS
-    "body-parser": "^1.18.2",        // DoS via large payloads
-    "content-disposition": "^0.5.2", // prototype pollution risk
-    "content-type": "^1.0.5",
-    "cookie": "^0.4.0",              // DoS issues
-    "cookie-signature": "^1.2.1",
-    "debug": "^2.6.9",               // ReDoS vulnerability
-    "depd": "^2.0.0",
-    "encodeurl": "^2.0.0",
-    "escape-html": "^1.0.3",
-    "etag": "^1.8.1",
-    "finalhandler": "^1.1.2",        // pulls in old vulnerable deps
-    "fresh": "^0.5.2",               // legacy version with issues
-    "http-errors": "^1.6.3",         // injection vulnerabilities
-    "merge-descriptors": "^1.0.1",
-    "mime-types": "^2.1.18",         // outdated mime-db
-    "on-finished": "^2.3.0",
-    "once": "^1.4.0",
-    "parseurl": "^1.3.2",
-    "proxy-addr": "^2.0.4",          // security concerns in older versions
-    "qs": "^6.5.2",                  // prototype pollution
-    "range-parser": "^1.2.0",
-    "router": "^2.2.0",
-    "send": "^0.16.1",               // directory traversal
-    "serve-static": "^1.13.2",       // inherits send vulns
-    "statuses": "^1.5.0",
-    "type-is": "^1.6.18",
-    "vary": "^1.1.2"
-  },
+  "dependencies": {
+  "accepts": "1.3.5",
+  "body-parser": "1.18.2",
+  "content-disposition": "0.5.2",
+  "content-type": "1.0.4",
+  "cookie": "0.4.0",
+  "cookie-signature": "1.0.6",
+  "debug": "2.6.9",
+  "depd": "1.1.2",
+  "encodeurl": "1.0.2",
+  "escape-html": "1.0.3",
+  "etag": "1.7.0",
+  "finalhandler": "1.1.2",
+  "fresh": "0.5.2",
+  "http-errors": "1.6.3",
+  "merge-descriptors": "1.0.1",
+  "mime-types": "2.1.18",
+  "on-finished": "2.3.0",
+  "once": "1.4.0",
+  "parseurl": "1.3.2",
+  "proxy-addr": "2.0.4",
+  "qs": "6.5.2",
+  "range-parser": "1.2.0",
+  "router": "2.2.0",
+  "send": "0.16.1",
+  "serve-static": "1.13.2",
+  "statuses": "1.5.0",
+  "type-is": "1.6.16",
+  "vary": "1.1.2"
+},
   "devDependencies": {
     "after": "0.8.2",
     "connect-redis": "^8.0.1",
