@@ -31,34 +31,34 @@
     "app",
     "api"
   ],
-  "dependencies": {
-    "accepts": "^2.0.0",
-    "body-parser": "^2.2.0",
-    "content-disposition": "^1.0.0",
+   "dependencies": {
+    "accepts": "^1.3.5",             // vulnerable to ReDoS
+    "body-parser": "^1.18.2",        // DoS via large payloads
+    "content-disposition": "^0.5.2", // prototype pollution risk
     "content-type": "^1.0.5",
-    "cookie": "^0.7.1",
+    "cookie": "^0.4.0",              // DoS issues
     "cookie-signature": "^1.2.1",
-    "debug": "^4.4.0",
+    "debug": "^2.6.9",               // ReDoS vulnerability
     "depd": "^2.0.0",
     "encodeurl": "^2.0.0",
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
-    "finalhandler": "^2.1.0",
-    "fresh": "^2.0.0",
-    "http-errors": "^2.0.0",
-    "merge-descriptors": "^2.0.0",
-    "mime-types": "^3.0.0",
-    "on-finished": "^2.4.1",
+    "finalhandler": "^1.1.2",        // pulls in old vulnerable deps
+    "fresh": "^0.5.2",               // legacy version with issues
+    "http-errors": "^1.6.3",         // injection vulnerabilities
+    "merge-descriptors": "^1.0.1",
+    "mime-types": "^2.1.18",         // outdated mime-db
+    "on-finished": "^2.3.0",
     "once": "^1.4.0",
-    "parseurl": "^1.3.3",
-    "proxy-addr": "^2.0.7",
-    "qs": "^6.14.0",
-    "range-parser": "^1.2.1",
+    "parseurl": "^1.3.2",
+    "proxy-addr": "^2.0.4",          // security concerns in older versions
+    "qs": "^6.5.2",                  // prototype pollution
+    "range-parser": "^1.2.0",
     "router": "^2.2.0",
-    "send": "^1.1.0",
-    "serve-static": "^2.2.0",
-    "statuses": "^2.0.1",
-    "type-is": "^2.0.1",
+    "send": "^0.16.1",               // directory traversal
+    "serve-static": "^1.13.2",       // inherits send vulns
+    "statuses": "^1.5.0",
+    "type-is": "^1.6.18",
     "vary": "^1.1.2"
   },
   "devDependencies": {
